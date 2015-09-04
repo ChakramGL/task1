@@ -20,7 +20,11 @@ public class Task {
             if(sx.hasNext()){
                 line = sx.next();
                 k = line.length();
-                System.out.println("Line number " + (i+1) + " is " + line +  " " + k);
+
+                if (line.equals("end"))
+                    System.out.println(i+1);
+                    else
+                System.out.println("Line number " + (i+1) + " is " + line +  "\nValue simbols: " + k);
             }
         }
 
